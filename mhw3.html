@@ -1,0 +1,279 @@
+<!--Alberto Calabrese 1000014688-->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mhw3</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="provided-style.css"/>
+    <link rel="stylesheet" href="mhw3style.css"/>
+    <script src="constants.js" defer="true"></script>
+    <script src="mhw3.js" defer="true"></script>
+    <script src="mhw3script.js" defer="true"></script>
+  </head>
+
+  <body>
+
+      <header>
+          <h1>Mondo del calcio</h1>
+          <div>
+            <span>Quiz</span>
+            <span>Campionati</span>
+            <span>Ascolta</span>
+            <span>Home</span>
+          </div>
+      </header>
+      
+      <article id="home">
+        <div>
+          <h1>
+            Tutto sul mondo del calcio e della musica 
+          </h1>
+          <h3>
+            Scegli un'opzione in alto e divertiti con noi!!
+          </h3>
+        </div>
+
+      </article>
+
+
+      <article id="containerCampionato" class="hidden">
+                
+
+        <form id="formCampionati">
+          <div>
+            Stagione
+            <select name = 'stagione' id='stagione'>
+              <option value="2022">2022-23</option>  
+              <option value="2021">2021-22</option>
+              <option value="2020">2020-21</option>
+              <option value="2019">2019-20</option>
+              <option value="2018">2018-19</option>
+              <option value="2017">2017-18</option>
+              <option value="2016">2016-17</option>
+              <option value="2015">2015-16</option>
+              <option value="2014">2014-15</option>
+            </select>
+          </div>
+
+          Seleziona la nazione di cui vuoi visualizzare il campionato :	
+			    <select name = 'tipo' id='tipo'>
+            <option value="ita.1">Italia</option>
+            <option value="eng.1">Inghilterra</option>
+            <option value="ger.1">Germania</option>
+            <option value="esp.1">Spagna</option>
+            <option value="fra.1">Francia</option>
+			    </select>
+
+          <input type="submit" value="seleziona">
+			
+			
+        </form>
+
+        <article id="viewCampionati">
+
+        </article>
+
+      </article>
+
+
+
+
+      <article id="spotify" class="hidden">
+                
+
+        <form id="formSpotify">
+          
+          Scegli il nome di un artista o il titolo di una canzone : 
+          <input type="text" id="traccia">
+          <input type="submit" value="cerca">
+			
+			
+        </form>
+
+        <article id="viewSpotify">
+
+        </article>
+
+      </article>
+
+
+
+
+  <article id="quiz" class="hidden">
+    <h1>Quiz personalità-calcio, scopri chi sei!!</h1>
+
+      <section class="question-name">
+        <h1>Chi è il miglior giocatore della Juventus di sempre?</h1>
+      </section>
+
+      <section class="choice-grid">
+
+        <div data-choice-id="blep" data-question-id="one">
+          <img src="https://www.calcioweb.eu/wp-content/uploads/2014/10/del-piero3.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="happy" data-question-id="one">
+          <img src="https://images2.gazzettaobjects.it/methode_image/2018/12/10/Calcio/Foto%20Calcio%20-%20Trattate/31.0.1012834460-0050-U2021820495617iD-U3101123990664zRD-620x349@Gazzetta-Web_articolo.jpg?v=201812101702"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleeping" data-question-id="one">
+          <img src="https://img-prod.sportmediaset.mediaset.it/images/2022/01/25/111148569-e37a20be-f63c-4921-a3f5-fa94f1e3f1e9.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+
+        <div data-choice-id="dopey" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Dino_Zoff_-_1972_-_Juventus_FC_%28cropped%29.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+        
+
+        <div data-choice-id="burger" data-question-id="one">
+          <img src="https://enasc.it/wp-content/uploads/2021/06/R086e3b983beee0c17a9497d4b92a8ebf.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cart" data-question-id="one">
+          <img src="https://cdn.calciomercato.com/images/2015-10/Trezeguet.Juve.2005.1400x840.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="nerd" data-question-id="one">
+          <img src="https://nursetimes.org/wp-content/uploads/2017/05/Buffon.jpeg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+        
+
+        <div data-choice-id="shy" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/it/a/a5/Michel_Platini%2C_Juventus_1984-85.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+        
+        <div data-choice-id="sleepy" data-question-id="one">
+          <img src="https://i.holmesdale.net/news/1902.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+        
+
+      </section>
+
+      <section class="question-name">
+        <h1>Chi è il miglior giocatore dell'Inter di sempre?</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="blep" data-question-id="two">
+          <img src="https://footballnews24.it/wp-content/uploads/2022/06/Javier_Zanetti_1-1.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="happy" data-question-id="two">
+          <img src="https://footballnews24.it/wp-content/uploads/2022/03/Sandro-Mazzola-e1510942463112-1280x720-1.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleeping" data-question-id="two">
+          <img src="https://www.corriere.it/methode_image/2020/02/08/Sport/Foto%20Sport%20-%20Trattate/32.0.1299701607-kg3E-U31602050902775AoH-656x492@Corriere-Web-Sezioni.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="dopey" data-question-id="two">
+          <img src="https://bitonto.gocity.it/library/media/diego_milito.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="burger" data-question-id="two">
+          <img src="https://static.wikia.nocookie.net/intercalcio/images/7/76/Add.jpg/revision/latest?cb=20201230181605&path-prefix=it"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cart" data-question-id="two">
+          <img src="https://static-archive.sky.it/images/sezioni/sport/calciomercato/2012/12/12/sneijder_inter_getty_1.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="nerd" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/it/b/bf/FC_Inter_-_1997_-_Ronaldo.jpeg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="shy" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/it/8/81/Giuseppe_bergomi.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleepy" data-question-id="two">
+          <img src="https://www.corriere.it/methode_image/2021/05/06/Sport/Foto%20Sport%20-%20Trattate/41.0.662819730-kM2H-U3260961259196chH-656x492@Corriere-Web-Sezioni.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <section class="question-name">
+        <h1>Chi è il miglior giocatore del Milan di sempre?</h1>
+      </section>
+
+      <section class="choice-grid">
+
+        <div data-choice-id="blep" data-question-id="three">
+          <img src="https://11contro11.it/wp-content/uploads/2020/12/shevchenko.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="happy" data-question-id="three">
+          <img src="https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2017/06/19/1497856259-maldini.jpg?_=1497856259"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleeping" data-question-id="three">
+          <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2012/06/06/849045-20360854-2560-1440.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="dopey" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/it/f/fa/Franco_Baresi_-_Milan_AC_1996-97.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="burger" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/it/e/e5/Marco_van_Basten_-_Milan_AC_1990-91.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cart" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/it/4/4d/Ruud_Gullit_-_Milan.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="nerd" data-question-id="three">
+          <img src="https://static.sky.it/editorialimages/e6b72f9e156d5a75ea993c42a0a2ade5e32bf55a/skysport/it/calcio/serie-a/2020/12/28/ibrahimovic-milan-2020/ibra.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="shy" data-question-id="three">
+          <img src="https://cdn.calciomercato.com/images/2017-11/kaka.milan.manchester.united.2007.1400x840.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleepy" data-question-id="three">
+          <img src="https://tmssl.akamaized.net/images/foto/galerie/frank-rijkaard-milan-1610448370-54446.jpg?lm=1610448417"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+      
+    <footer id="risultato" class="hidden">
+        <h1></h1>
+        <p></p>
+        <div>Ricomincia quiz</div>
+    </footer>
+
+  </article>
+
+  
+  
+  </body>
+</html>
